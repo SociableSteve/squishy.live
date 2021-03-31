@@ -1,0 +1,19 @@
+#pet-img {
+  position: absolute;
+}
+
+#stats {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#stats div {
+  color: white;
+  text-align: center;
+}
