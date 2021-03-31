@@ -1,5 +1,11 @@
-#pet-img {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+#pet {
   position: absolute;
+  bottom: 0;
 }
 
 #stats {
@@ -16,4 +22,16 @@
 #stats div {
   color: white;
   text-align: center;
+}
+
+#speech {
+  position: absolute;
+  bottom: 133px;
+  background: #b4b4b4;
+  color: black;
+  border: 1px solid #4c008d;
+  border-radius: 3px;
+  padding: 0 10px 5px;
+  white-space: nowrap;
+  opacity: 0;
 }

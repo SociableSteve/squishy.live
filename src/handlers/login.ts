@@ -19,7 +19,7 @@ async function login(req: express.Request, res: express.Response) {
       }
     );
 
-    // TODO: Fetch user details here
+    // Fetch user details here
     const user = await axios.get("https://api.twitch.tv/helix/users", {
       headers: {
         Authorization: `Bearer ${response.data.access_token}`,
@@ -28,7 +28,6 @@ async function login(req: express.Request, res: express.Response) {
     });
     const user_details = user.data.data[0];
 
-    console.log(user_details);
     // Add user to database is not already existing
     const db = req.app.get("db") as pg.Pool;
     // UUID | channel_id
@@ -64,8 +63,5 @@ async function login(req: express.Request, res: express.Response) {
 export default login;
 
 // TODO: Add weight!
-// TODO: Welcome people, announce bans, thanks for bits
-// TODO: Pet ticking
-// TODO: Save pet state
 // TODO: Styling - front end
 // TODO: Deploy
