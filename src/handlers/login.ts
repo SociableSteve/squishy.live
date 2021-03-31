@@ -64,4 +64,3 @@ export default login;
 
 // TODO: Add weight!
 // TODO: Styling - front end
-// TODO: Deploy
