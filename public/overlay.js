@@ -29,7 +29,7 @@ function connectSocket() {
 
   // Should attempt auto-reconnect here!
   ws.onclose = () => {
-    setTimeout(connectSocket, 1000);
+    setTimeout(connectSocket, 10000);
   };
 }
 connectSocket();
