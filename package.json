@@ -6,8 +6,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "migrate": "DATABASE_URL=postgres://doadmin:ssz9aw9spejup5j6@squishy-live-dev-do-user-168670-0.b.db.ondigitalocean.com:25060/defaultdb?sslmode=require NODE_TLS_REJECT_UNAUTHORIZED=0 node-pg-migrate up",
-    "migrate:down": "DATABASE_URL=postgres://doadmin:ssz9aw9spejup5j6@squishy-live-dev-do-user-168670-0.b.db.ondigitalocean.com:25060/defaultdb?sslmode=require NODE_TLS_REJECT_UNAUTHORIZED=0 node-pg-migrate down"
+    "migrate": "DATABASE_URL=postgres://ftqawdzzmwupch:f3bacd2b41474f018c0bda816b26e63970fbd58ccd67845a618c6f5db2ae7f76@ec2-54-216-185-51.eu-west-1.compute.amazonaws.com:5432/d16abhpndt84h1?sslmode=require NODE_TLS_REJECT_UNAUTHORIZED=0 node-pg-migrate up",
+    "migrate:down": "DATABASE_URL=postgres://doadmin:ssz9aw9spejup5j6@squishy-live-dev-do-user-168670-0.b.db.ondigitalocean.com:25060/defaultdb?sslmode=require NODE_TLS_REJECT_UNAUTHORIZED=0 node-pg-migrate down",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",
